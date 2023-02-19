@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/src/css/styles.css">
+        <title>CRUD</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://camo.githubusercontent.com/0d601c68ab4ee554491ffe2aa994f48e47ff6447f295e1a359a07fb9fb070a64/68747470733a2f2f332e62702e626c6f6773706f742e636f6d2f2d6a7779624b6a314d6e49552f57423676395448714b7a492f414141414141414149586b2f475030673553313643656f31505032353254325259704d674156684a6866544541434c63422f73313630302f435255442e706e67" alt="CRUD" width="140" height="60">
+                    </a>
+                <a class="navbar-brand" href="#"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                Proyecto No. 2: Desarrollo de Software CRUD</a>
+                        </li>
+                    </ul>
+                </div>
+                </div> 
+            </nav> 
+        </header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <main class="form-section">
+                        <div class="box">
+                            <h1>Add your data:</h1>
+                        <form class="form" >
+                            <label>Name </label>
+                            <input type="text" name="name" id="name" class="input-group inpt" required quired minlength="2" maxlength="30">
+                
+                            <label>Last name </label>
+                            <input type="text" name="lastName" id="lastName" class="input-group inpt" required minlength="4" maxlength="30">
+                
+                            <label>Age </label>
+                            <input type="text" name="age" id="age" class="input-group inpt" required minlength="2" maxlength="3">
+                
+                            <label>Gender </label>
+                            <input type="text" name="gender" id="gender" class="input-group inpt" required minlength="4" maxlength="10">
+                            <br>
+                            <button id="add-button" class="btn btn-primary btn-form">Add Person</button>
+                        </form>
+                        </div>
+                        <div class="person-container">
+                            <h1>Data on Board:</h1>
+                            <div id="content" class="content">
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <div class="col">
+                    <section class="list-data">
+                        <div class="table-responsive">
+                            <table id="data-table" class="table table-hover align-middle">
+                                <thead>
+                                    <th>Name</th>
+                                    <th>Last name</th>
+                                    <th>Age</th>
+                                    <th>Gender</th>
+                                    <th></th>
+                                </thead>
+                                <tbody class="text-center"></tbody>
+                            </table>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h3>Jonathan Ocampo Rodriguez</h3>
+        </footer>
+        <script src="src/js/main.js"></script>
+    </body>
+</html>
